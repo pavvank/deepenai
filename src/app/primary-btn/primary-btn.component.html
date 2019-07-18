@@ -1,0 +1,4 @@
+<div class="my-btn" [ngClass]="{'my-btn-selected' : selected, 'my-btn' : !selected}">
+  <span style="position: relative;left: 30px">{{name}}</span>
+  <span style="position: absolute;font-size: 18px;right: 27px;" *ngIf="selected">></span>
+</div>

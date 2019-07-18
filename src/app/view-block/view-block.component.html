@@ -1,0 +1,32 @@
+<div style="
+  box-shadow: 0px 1px 5px gray;
+  background-color: white;
+  height: 75px;
+  width: 560px;
+  padding: 10px 10px 7px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+"
+(click)="onSelect(tagIndex)"
+>
+
+  <div style="display: flex; justify-content: space-between;">
+
+    <div style="font-size: 12px">
+      <span>{{ tagName }}</span>
+      <span style="margin-left: 10px; font-style: italic; color: gray">( {{shortCut}} )</span>
+    </div>
+
+    <div style="font-size: 12px; color: gray">
+      <i class="fas fa-times" (click)="onRemove(tagIndex)"></i>
+    </div>
+
+  </div>
+
+  <div style="display: flex">
+    <div #attrBox></div>
+  </div>
+
+</div>

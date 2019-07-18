@@ -1,0 +1,26 @@
+.my-btn-selected {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    background: blue;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+}
+
+.my-btn {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    color: gray;
+}

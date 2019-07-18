@@ -1,0 +1,5 @@
+<div class="main">
+  <div [ngClass]="{'text-selected':selected, 'text-normal':!selected}">{{ value }}</div>
+  <div style="background:blue; width: 100%; height: 5px; 
+      border-radius: 3px" *ngIf="selected"></div>
+</div>

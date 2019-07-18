@@ -1,0 +1,220 @@
+#main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #eeeeee;
+    width: 1920px;
+    height: 1080px;
+}
+
+#modal {
+    /* border: 1px solid black;*/
+    box-sizing: border-box;
+    height: 859px;
+    width: 1000px;
+    position: relative;
+}
+
+#stage-circles {
+    position: relative;
+    width: 1000px;
+    /* border: 1px solid black;*/
+    box-sizing: border-box;
+    height: 58px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+#value-entry-block {
+    position: relative;
+    /* border: 1px solid black;*/
+    box-sizing: border-box;
+    height: 830px;
+    top: -29px;
+    width: 1000px;
+    background-image: url("../../assets/mallik-categories_and_attributes.svg");
+    background-repeat: no-repeat;
+    background-size: 265px;
+    background-position-x: 684px;
+    background-position-y: 75px;
+    /* background-color: red; */
+    box-shadow: 0px 1px 5px gray;
+    background-color: white;
+}
+
+#description {
+    /* border: 1px solid black;*/
+    height: 228px;
+    box-sizing: border-box;
+    /* background-color: green; */
+    font-family: monospace;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu-main {
+    position: relative;
+    /* border: 1px solid black;*/
+    box-sizing: border-box;
+    height: 517px;
+    display: flex;
+    /* background-color: brown; */
+}
+
+#left {
+    /* border: 1px solid black;*/
+    position: relative;
+    top: 1px;
+    height: 100%;
+    width: 160px;
+}
+
+#right {
+    /* border: 1px solid black;*/
+    height: 100%;
+    width: 841px;
+    /* background-color: #555; */
+    position: relative;
+    top: 1px;
+    padding: 0px 50px;
+}
+
+#bottom-nav {
+    width: 1000px;
+    /* background-color: navy; */
+    height: 85px;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    justify-content: space-between;
+}
+
+#close-btn {
+    cursor: pointer;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding: 0px 39px;
+    font-weight: bolder;
+    box-shadow: 0px 1px 5px #555;
+    color: blue;
+    border-radius: 5px;
+}
+
+#pre-btn {
+    cursor: pointer;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding: 0px 39px;
+    font-weight: bolder;
+    box-shadow: 0px 1px 5px #555;
+    color: blue;
+    border-radius: 5px;
+}
+
+#next-btn {
+    cursor: pointer;
+    height: 35px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding: 0px 39px;
+    font-weight: bolder;
+    box-shadow: 0px 1px 5px #555;
+    color: white;
+    border-radius: 5px;
+}
+
+#sub-menu {
+    /* background-color: yellow; */
+    height: 29px;
+    width: 100%;
+    display: flex;
+}
+
+#edit {
+    width: 100%;
+    height: 100%;
+    /* background: green; */
+    padding-top: 25px;
+}
+
+#view-block {
+    /* box-shadow: 0px 1px 5px gray; */
+    background-color: white;
+    margin: 5px 0px;
+    /* height: 80px; */
+    /* width: 580px; */
+    /* padding: 10px 10px 7px 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* overflow-y: scroll; */
+}
+
+#add-block {
+    box-shadow: 0px 1px 5px gray;
+    background-color: white;
+    margin: 20px 0px;
+    height: 130px;
+    width: 560px;
+}
+
+#round-btn {
+    height: 50px;
+    width: 50px;
+    background: red;
+    border-radius: 25px;
+}
+
+#circle-container {
+    height: 100%;
+    width: 50%;
+    padding: 5px;
+}
+
+#btns {
+    position: relative;
+    top: -50px;
+    height: 100%;
+    /* background: black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#line {
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.part-one {
+    width: 50%;
+    height: 3px;
+    background: green;
+}
+
+.part-two {
+    width: 50%;
+    height: 3px;
+    background: repeating-linear-gradient( 270deg, white, white 5px, blue 5px, blue 10px);
+}

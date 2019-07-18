@@ -1,0 +1,4 @@
+<div id="round-btn" [class]="getClass(status)">
+    <span *ngIf="status!='complete'">{{ value }}</span>
+    <i *ngIf="status=='complete'" class="fas fa-check"></i>
+</div>

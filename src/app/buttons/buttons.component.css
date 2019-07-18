@@ -1,0 +1,39 @@
+.round-btn-complete {
+    height: 50px;
+    width: 50px;
+    background: green;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.round-btn-current {
+    height: 50px;
+    width: 50px;
+    background: blue;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.round-btn-incomplete {
+    height: 50px;
+    width: 50px;
+    background: white;
+    border: 3px solid gray;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+}

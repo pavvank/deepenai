@@ -1,0 +1,141 @@
+<div id="main-body">
+  <div id="modal" appListener>
+
+
+    <div id="stage-circles">
+
+      <div id="circle-container">
+
+        <div id="line">
+          <div [ngClass]="{'part-one' : part1, 'part-two': !part1}"></div>
+          <div [ngClass]="{'part-one' : part2, 'part-two': !part2}"></div>
+        </div>
+
+        <div id="btns">
+          <app-buttons value="1" [status]="btn1"></app-buttons>
+          <app-buttons value="2" [status]="btn2"></app-buttons>
+          <app-buttons value="3" [status]="btn3"></app-buttons>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="value-entry-block">
+      <div id="description">
+        <br>
+        <div id="heading" style="font-size: 25px;">
+          Setting up categories and attributes for project
+        </div>
+        <br><br>
+        <div id="text" style="font-size: 12px; color: gray">This includes setting up categories, file attributes and
+          label
+          attributes</div>
+        <br>
+        <div id="text" style="font-size: 12px;color: gray">with custom keyboard shortcuts for each label</div>
+
+      </div>
+
+      <div id="menu-main">
+        <div id="left">
+          <app-primary-btn btn-name="Box" [selected]="box" (click)="selectedMenu('box')"></app-primary-btn>
+          <app-primary-btn btn-name="Lane" [selected]="lane" (click)="selectedMenu('lane')"></app-primary-btn>
+          <app-primary-btn btn-name="Point" [selected]="point" (click)="selectedMenu('point')"></app-primary-btn>
+          <app-primary-btn btn-name="Polygon" [selected]="polygon" (click)="selectedMenu('polygon')"></app-primary-btn>
+        </div>
+        <div id="right">
+
+          <div id="sub-menu">
+            <app-sub-menu-btn value="Categories" [selected]="cat"></app-sub-menu-btn>
+            <app-sub-menu-btn value="File Attributes" [selected]="file"></app-sub-menu-btn>
+            <app-sub-menu-btn value="Label Attributes" [selected]="label"></app-sub-menu-btn>
+          </div>
+
+          <div id="edit">
+
+            <div id="view-block">
+              <div #tagBox></div>
+            </div>
+
+            <div id="add-block" style="padding: 20px 12px 12px 20px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              margin-top: 10px;
+              ">
+              <div>
+                <input type="text" placeholder="Enter Attribute Name" style="    height: 25px;
+                  font-size: 12px;
+                  text-decoration: dashed;
+                  border: none;
+                  border-bottom: 1px dashed gray;
+                  outline: none;
+                  width: 125px;" [(ngModel)]="attributeName" (keyup.enter)="createTag()">
+
+                <input type="text" placeholder="(ADD KEYBOARD SHORTCUT)" style="height: 25px;
+                  font-size: 12px;
+                  text-decoration: dashed;
+                  border: none;
+                  border-bottom: 1px dashed gray;
+                  outline: none;
+                  text-transform: capitalize;
+                  font-style: italic;
+                  width: 180px;
+                  margin-left: 25px;" (keyup.enter)="createTag()"
+                  (keyup)="test($event)"
+                  [(ngModel)]="keyShortcut">
+
+
+                <div>
+                  <input type="text" placeholder="Start typing attribute value .." style="
+                    height: 25px;
+                    font-size: 11px;
+                    border: none;
+                    outline: none;
+                    width: 185px;" [(ngModel)]="attrValue"
+                    #attrValueInputBox>
+                </div>
+
+              </div>
+
+              <div style="display: flex;justify-content: flex-end;">
+
+                <div style="font-size: 15px;
+                  padding: 10px 20px; 
+                  font-weight: bold;
+                  background-color: gray;
+                  color: white;
+                  box-shadow: 0px 1px 5px gray;
+                  display: block;
+                  border-radius: 5px;" (click)="createTagAttr()">
+                  Add
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div id="bottom-nav">
+        <div id="close-btn">Close</div>
+
+        <div style="display: flex">
+
+          <div id="pre-btn" (click)="onPrevious()">
+            <span>&lt;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Previous step</span>
+          </div>
+          <div id="next-btn" style="margin-left: 25px" (click)="onNext()">
+            <span>Next step</span><span> &nbsp;&nbsp;&nbsp;&nbsp;></span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
